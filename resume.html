@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Andrew Lees | Lees Renovations</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: #ffffff;
+        color: #1f5160;
+      }
+
+      /* Navigation Styles */
+      .navbar {
+        background-color: #ffffff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .nav-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .logo-image {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+      }
+
+      .logo-text {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .logo-name {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #1f5160;
+        line-height: 1.2;
+      }
+
+      .logo-company {
+        font-size: 1rem;
+        color: #4f84c2;
+        font-weight: 500;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #1f5160;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        color: #4f84c2;
+      }
+
+      /* Main Content Styles */
+      .main-content {
+        margin-top: 80px;
+        padding: 2rem;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .about-header {
+        background-color: #1f5160;
+        color: #ffffff;
+        padding: 4rem 2rem;
+        border-radius: 15px;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .about-header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .about-header p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      .about-section {
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .about-section h2 {
+        color: #1f5160;
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+      }
+
+      .about-section p {
+        color: #666;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+      }
+
+      .expertise-list {
+        list-style: none;
+        margin-top: 1rem;
+      }
+
+      .expertise-list li {
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+        position: relative;
+      }
+
+      .expertise-list li:before {
+        content: "•";
+        color: #4f84c2;
+        font-size: 1.5rem;
+        position: absolute;
+        left: 0;
+        top: -0.3rem;
+      }
+
+      .profile-image {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 2rem;
+        display: block;
+        object-fit: cover;
+        border: 4px solid #4f84c2;
+      }
+
+      .contact-info {
+        background: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin-top: 2rem;
+      }
+
+      .contact-info p {
+        margin: 0.5rem 0;
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+
+        .about-header {
+          padding: 2rem 1rem;
+        }
+
+        .about-header h1 {
+          font-size: 2rem;
+        }
+
+        .main-content {
+          padding: 1rem;
+        }
+
+        .about-section {
+          padding: 1.5rem;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo">
+          <img
+            src="images/Renovations Logo.png"
+            alt="Lees Renovations Logo"
+            class="logo-image"
+          />
+          <div class="logo-text">
+            <span class="logo-name">Andrew Lees</span>
+            <span class="logo-company">Lees Renovations</span>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="videogame.html">Video Game</a></li>
+          <li><a href="discovery.html">Discovery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main-content">
+      <div class="about-header">
+        <h1>Resume</h1>
+        <p>Professional Experience & Qualifications</p>
+      </div>
+
+      <div class="about-grid">
+        <section class="about-section">
+          <h2>Education</h2>
+          <p><strong>Hibbing High School - Hibbing, MN </strong></p>
+          <p>September 2017 - June 2023</p>
+          <p><strong>University of Minnesota - Duluth, MN</strong></p>
+          <p>Mathematics B.S and Entrepreneurship B.B.A</p>
+          <p>August 2023 - Present</p>
+        </section>
+
+        <section class="about-section">
+          <h2>Work Experience</h2>
+          <p><strong>Lees Rental - Maintenance Worker</strong></p>
+          <ul class="expertise-list"></ul>
+          <li>Managed renovation projects from concept to completion</li>
+          <li>Managed and maintained several properties</li>
+          <li>Working heavy machinery</li>
+        </section>
+
+        <section class="about-section" color="#1f5160">
+          <h2>Skills</h2>
+          <ul class="expertise-list">
+            <li>HTML/CSS Development</li>
+            <li>Project Management</li>
+            <li>Customer Relations</li>
+            <li>Business Analysis</li>
+          </ul>
+        </section>
+
+        <section class="about-section" color="#1f5160">
+          <h2>My Major</h2>
+          <p>
+            I am majoring in Mathematics and Entrepreneurship at the University
+            of Minnesota Duluth. I plan to use my majors to start up a house
+            renovation business in the future.
+          </p>
+        </section>
+      </div>
+      <section class="about-resume" style="text-align: center">
+        <h2>Download Resume</h2>
+        <p>Click below to download a PDF version of my resume</p>
+        <a
+          href="assets/Andrew_Lees_Resume.pdf"
+          download
+          style="
+            display: inline-block;
+            background-color: #1f5160;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 1rem;
+          "
+          style="display: block; margin: 0 auto; align-items: center"
+        >
+          Download PDF Resume
+        </a>
+      </section>
+    </main>
+  </body>
+</html>

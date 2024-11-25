@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Andrew Lees | Lees Renovations</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: #ffffff;
+        color: #1f5160;
+      }
+
+      /* Navigation Styles */
+      .navbar {
+        background-color: #ffffff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .nav-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .logo-image {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+      }
+
+      .logo-text {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .logo-name {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #1f5160;
+        line-height: 1.2;
+      }
+
+      .logo-company {
+        font-size: 1rem;
+        color: #4f84c2;
+        font-weight: 500;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #1f5160;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        color: #4f84c2;
+      }
+
+      /* Main Content Styles */
+      .main-content {
+        margin-top: 80px;
+        padding: 2rem;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .about-header {
+        background-color: #1f5160;
+        color: #ffffff;
+        padding: 4rem 2rem;
+        border-radius: 15px;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .about-header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .about-header p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      .about-section {
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .about-section h2 {
+        color: #1f5160;
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+      }
+
+      .about-section p {
+        color: #666;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+      }
+
+      .expertise-list {
+        list-style: none;
+        margin-top: 1rem;
+      }
+
+      .expertise-list li {
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+        position: relative;
+      }
+
+      .expertise-list li:before {
+        content: "•";
+        color: #4f84c2;
+        font-size: 1.5rem;
+        position: absolute;
+        left: 0;
+        top: -0.3rem;
+      }
+
+      .profile-image {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 2rem;
+        display: block;
+        object-fit: cover;
+        border: 4px solid #4f84c2;
+      }
+
+      .contact-info {
+        background: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin-top: 2rem;
+      }
+
+      .contact-info p {
+        margin: 0.5rem 0;
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+
+        .about-header {
+          padding: 2rem 1rem;
+        }
+
+        .about-header h1 {
+          font-size: 2rem;
+        }
+
+        .main-content {
+          padding: 1rem;
+        }
+
+        .about-section {
+          padding: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo">
+          <img
+            src="images/Renovations Logo.png"
+            alt="Lees Renovations Logo"
+            class="logo-image"
+          />
+          <div class="logo-text">
+            <span class="logo-name">Andrew Lees</span>
+            <span class="logo-company">Lees Renovations</span>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="videogame.html">Video Game</a></li>
+          <li><a href="discovery.html">Discovery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="game-wrapper">
+        <style>
+          /* Previous styles remain... */
+          body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #f0f0f0;
+            margin: auto;
+            padding: 20px;
+          }
+
+          .game-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin-top: 100px;
+          }
+
+          .room {
+            width: 600px;
+            height: 400px;
+            border: 3px solid #333;
+            position: relative;
+            background: #e6e6e6;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            border-radius: 10px;
+            box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            cursor: pointer;
+          }
+
+          .room:hover {
+            transform: scale(1.01);
+            box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.2);
+          }
+
+          .dirt {
+            width: 20px;
+            height: 20px;
+            background: #8b4513;
+            position: absolute;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+
+          .furniture {
+            position: absolute;
+            background: #a0522d;
+            cursor: pointer;
+          }
+
+          .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+
+          button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: #4caf50;
+            color: white;
+            font-weight: bold;
+          }
+
+          button:hover {
+            background: #45a049;
+          }
+
+          .stats {
+            margin-bottom: 20px;
+            text-align: center;
+          }
+
+          .inventory {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+          .room-selector {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+          }
+
+          .room-selector button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+          }
+
+          .room-selector button:hover {
+            background-color: #45a049;
+          }
+          .inventory-item {
+            padding: 5px 10px;
+            background: #ddd;
+            border-radius: 5px;
+          }
+
+          /* New styles for help menu */
+          .help-menu {
+            margin-bottom: 20px;
+            width: 100%;
+          }
+
+          .help-button {
+            width: 100%;
+            padding: 10px;
+            background: #2196f3;
+            color: white;
+            border: none;
+            border-radius: 5px 5px 0 0;
+            cursor: pointer;
+            font-weight: bold;
+          }
+
+          .help-content {
+            display: none;
+            padding: 15px;
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 0 0 5px 5px;
+          }
+
+          .help-content.show {
+            display: block;
+          }
+
+          .help-section {
+            margin-bottom: 15px;
+          }
+
+          .help-section h3 {
+            color: #2196f3;
+            margin-bottom: 8px;
+          }
+
+          .help-section ul {
+            margin: 0;
+            padding-left: 20px;
+          }
+
+          .help-section li {
+            margin-bottom: 5px;
+          }
+
+          /* Previous room-specific styles remain... */
+          .room-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+
+          .room-info {
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: bold;
+          }
+
+          .kitchen-item {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: #666;
+            border-radius: 5px;
+          }
+
+          .bathroom-tile {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid #ccc;
+          }
+
+          .window {
+            position: absolute;
+            width: 60px;
+            height: 80px;
+            background: #87ceeb;
+            border: 5px solid #a0522d;
+          }
+        </style>
+      </head>
+      <body>
+      <div class="game-container">
+          <!-- New Help Menu -->
+          <div class="help-menu">
+            <center><h1>House Cleanup</h1></center>
+            <button class="help-button" onclick="toggleHelp()">
+              📖 How to Play (Click to Show/Hide)
+            </button>
+            <div class="help-content" id="helpContent">
+              <div class="help-section">
+                <h3>🎮 Basic Controls</h3>
+                <ul>
+                  <li>Click on dirt spots (brown circles) to clean them</li>
+                  <li>Click anywhere in the room to place furniture</li>
+                  <li>Use room buttons to switch between different rooms</li>
+                  <li>Buy items from the shop using earned money</li>
+                </ul>
+              </di            <div class="help-section">
+                <h3>💰 Economy</h3>
+                <ul>
+                  <li>Start with $100 and one broom</li>
+                  <li>Earn $5 for each cleaned dirt spot</li>
+                  <li>
+                    Shop Prices:
+                    <ul>
+                      <li>Broom: $50</li>
+                      <li>Sponge: $30</li>
+                      <li>Furniture: $100</li>
+                      <li>Paint: $75</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="help-section">
+                <h3>🏠 Rooms</h3>
+                <ul>
+                  <li>Bedroom: Regular dirt accumulation (3s)</li>
+                  <li>Kitchen: Faster dirt (2s)</li>
+                  <li>Bathroom: Fastest dirt (1.5s)</li>
+                  <li>Living Room: Slowest dirt (4s)</li>
+                </ul>
+              </div>
+
+              <div class="help-section">
+                <h3>📊 Scoring</h3>
+                <ul>
+                  <li>Clean dirt: +10 points</li>
+                  <li>Place furniture: +20 points</li>
+                  <li>Paint room: +30 points</li>
+                </ul>
+              </div>
+
+              <div class="help-section">
+                <h3>💡 Tips</h3>
+                <ul>
+                  <li>Keep multiple cleaning tools in inventory</li>
+                  <li>Tools have 10% chance to break after use</li>
+                  <li>Start with living room for easier money</li>
+                  <li>Clean dirt quickly before it piles up</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rest of the game HTML remains the same -->
+          <div class="stats">
+            <p>Score: <span id="score">0</span></p>
+            <p>Money: $<span id="money">100</span></p>
+          </div>
+          <div class="inventory">
+            <div class="inventory-item">
+              🧹 Broom: <span id="brooms">1</span>
+            </div>
+            <div class="inventory-item">
+              🪑 Furniture: <span id="furniture">0</span>
+            </div>
+            <div class="inventory-item">
+              🎨 Paint: <span id="paint">0</span>
+            </div>
+            <div class="inventory-item">
+              🧽 Sponge: <span id="sponges">0</span>
+            </div>
+          </div>
+          <div class="controls">
+            <button onclick="buyItem('broom')">Buy Broom ($50)</button>
+          </div>
+          <button onclick="buyItem('furniture')">Buy Furniture ($100)</button>
+          <button onclick="buyItem('paint')">Buy Paint ($75)</button>
+          <button onclick="buyItem('sponge')">Buy Sponge ($30)</button>
+        </div>
+        <div class="room-selector">
+          <button onclick="changeRoom('bedroom')">Bedroom</button>
+          <button onclick="changeRoom('kitchen')">Kitchen</button>
+          <button onclick="changeRoom('bathroom')">Bathroom</button>
+          <button onclick="changeRoom('livingroom')">Living Room</button>
+        </div>
+        <div class="room-info">
+          Current Room: <span id="current-room">Bedroom</span>
+        </div>
+        <div id="room" class="room"></div>
+
+        <script>
+          let score = 0;
+          let money = 100;
+          let currentRoom = "bedroom";
+          let inventory = {
+            brooms: 1,
+            furniture: 0,
+            paint: 0,
+            sponges: 0,
+          };
+
+          // Add new help menu toggle function
+          function toggleHelp() {
+            const helpContent = document.getElementById("helpContent");
+            helpContent.classList.toggle("show");
+          }
+
+          const roomTypes = {
+            bedroom: {
+              background: "#e6e6e6",
+              dirtFrequency: 3000,
+              setup: function (room) {
+                const window = document.createElement("div");
+                window.className = "window";
+                window.style.right = "20px";
+                window.style.top = "20px";
+                room.appendChild(window);
+              },
+            },
+            kitchen: {
+              background: "#f5f5dc",
+              dirtFrequency: 2000,
+              setup: function (room) {
+                for (let i = 0; i < 3; i++) {
+                  const counter = document.createElement("div");
+                  counter.className = "kitchen-item";
+                  counter.style.bottom = "0";
+                  counter.style.left = i * 40 + 10 + "px";
+                  counter.style.width = "30px";
+                  counter.style.height = "60px";
+                  room.appendChild(counter);
+                }
+              },
+            },
+            bathroom: {
+              background: "#e0ffff",
+              dirtFrequency: 1500,
+              setup: function (room) {
+                for (let i = 0; i < 5; i++) {
+                  for (let j = 0; j < 4; j++) {
+                    const tile = document.createElement("div");
+                    tile.className = "bathroom-tile";
+                    tile.style.left = i * 42 + "px";
+                    tile.style.top = j * 42 + "px";
+                    room.appendChild(tile);
+                  }
+                }
+              },
+            },
+            livingroom: {
+              background: "#fff0f5",
+              dirtFrequency: 4000,
+              setup: function (room) {
+                for (let i = 0; i < 2; i++) {
+                  const window = document.createElement("div");
+                  window.className = "window";
+                  window.style.right = i * 100 + 20 + "px";
+                  window.style.top = "20px";
+                  room.appendChild(window);
+                }
+              },
+            },
+          };
+
+          let dirtInterval;
+
+          function updateStats() {
+            document.getElementById("score").textContent = score;
+            document.getElementById("money").textContent = money;
+            document.getElementById("brooms").textContent = inventory.brooms;
+            document.getElementById("furniture").textContent =
+              inventory.furniture;
+            document.getElementById("paint").textContent = inventory.paint;
+            document.getElementById("sponges").textContent = inventory.sponges;
+          }
+
+          function buyItem(item) {
+            const prices = {
+              broom: 50,
+              furniture: 100,
+              paint: 75,
+              sponge: 30,
+            };
+
+            if (money >= prices[item]) {
+              money -= prices[item];
+              inventory[item + "s"]++;
+              updateStats();
+            } else {
+              alert("Not enough money!");
+            }
+          }
+
+          function createDirt() {
+            const dirt = document.createElement("div");
+            dirt.className = "dirt";
+            dirt.style.left = Math.random() * 380 + "px";
+            dirt.style.top = Math.random() * 280 + "px";
+            dirt.onclick = function () {
+              if (inventory.brooms > 0 || inventory.sponges > 0) {
+                this.remove();
+                score += 10;
+                money += 5;
+                updateStats();
+                if (Math.random() < 0.1) {
+                  if (inventory.sponges > 0) inventory.sponges--;
+                  else if (inventory.brooms > 0) inventory.brooms--;
+                  updateStats();
+                }
+              } else {
+                alert("You need a cleaning tool!");
+              }
+            };
+            document.getElementById("room").appendChild(dirt);
+          }
+
+          function placeFurniture(e) {
+            // Only handle furniture placement if clicking directly on the room
+            if (e.target.className === 'room') {
+              if (inventory.furniture > 0) {
+                const furniture = document.createElement("div");
+                furniture.className = "furniture";
+                furniture.style.width = "40px";
+                furniture.style.height = "40px";
+                const rect = e.target.getBoundingClientRect();
+                const x = e.clientX - rect.left - 20;
+                const y = e.clientY - rect.top - 20;
+                furniture.style.left = x + "px";
+                furniture.style.top = y + "px";
+                inventory.furniture--;
+                score += 20;
+                updateStats();
+                document.getElementById("room").appendChild(furniture);
+              } else if (e.target.className === 'room') {
+                alert("You need to buy furniture first!");
+              }
+            }
+          }
+
+          function changeRoom(roomType) {
+            currentRoom = roomType;
+            const room = document.getElementById("room");
+            room.innerHTML = "";
+            room.style.background = roomTypes[roomType].background;
+            roomTypes[roomType].setup(room);
+            document.getElementById("current-room").textContent =
+              roomType.charAt(0).toUpperCase() + roomType.slice(1);
+            clearInterval(dirtInterval);
+            dirtInterval = setInterval(
+              createDirt,
+              roomTypes[roomType].dirtFrequency
+            );
+          }
+
+          // Initialize game
+          document.getElementById("room").onclick = placeFurniture;
+          changeRoom("bedroom");
+          updateStats();
+        </script>
+      </body>
+    </html>
+  </body>
+</html>

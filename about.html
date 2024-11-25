@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Andrew Lees | Lees Renovations</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: #ffffff;
+        color: #1f5160;
+      }
+
+      /* Navigation Styles */
+      .navbar {
+        background-color: #ffffff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .nav-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .logo-image {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+      }
+
+      .logo-text {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .logo-name {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #1f5160;
+        line-height: 1.2;
+      }
+
+      .logo-company {
+        font-size: 1rem;
+        color: #4f84c2;
+        font-weight: 500;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #1f5160;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        color: #4f84c2;
+      }
+
+      /* Main Content Styles */
+      .main-content {
+        margin-top: 80px;
+        padding: 2rem;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .about-header {
+        background-color: #1f5160;
+        color: #ffffff;
+        padding: 4rem 2rem;
+        border-radius: 15px;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .about-header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .about-header p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      .about-section {
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .about-section h2 {
+        color: #1f5160;
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+      }
+
+      .about-section p {
+        color: #666;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+      }
+
+      .expertise-list {
+        list-style: none;
+        margin-top: 1rem;
+      }
+
+      .expertise-list li {
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+        position: relative;
+      }
+
+      .expertise-list li:before {
+        content: "•";
+        color: #4f84c2;
+        font-size: 1.5rem;
+        position: absolute;
+        left: 0;
+        top: -0.3rem;
+      }
+
+      .profile-image {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 2rem;
+        display: block;
+        object-fit: cover;
+        border: 4px solid #4f84c2;
+      }
+
+      .contact-info {
+        background: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin-top: 2rem;
+      }
+
+      .contact-info p {
+        margin: 0.5rem 0;
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+
+        .about-header {
+          padding: 2rem 1rem;
+        }
+
+        .about-header h1 {
+          font-size: 2rem;
+        }
+
+        .main-content {
+          padding: 1rem;
+        }
+
+        .about-section {
+          padding: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo">
+          <img
+            src="images/Renovations Logo.png"
+            alt="Lees Renovations Logo"
+            class="logo-image"
+          />
+          <div class="logo-text">
+            <span class="logo-name">Andrew Lees</span>
+            <span class="logo-company">Lees Renovations</span>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="videogame.html">Video Game</a></li>
+          <li><a href="discovery.html">Discovery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About - Andrew Lees</title>
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+          body {
+            background-color: #1f5160;
+            color: white;
+          }
+
+          .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+          }
+
+          .about-container {
+            display: flex;
+            gap: 3rem;
+            margin-top: 2rem;
+          }
+
+          .about-text {
+            flex: 2;
+            font-size: 1.1rem;
+            line-height: 1.8;
+          }
+
+          .about-ai {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            width: 400px;
+          }
+
+          .about-ai img {
+            width: 100%;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+          }
+
+          .image-caption {
+            font-style: italic;
+            opacity: 0.9;
+            margin-top: 0.5rem;
+          }
+
+          .about-header {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+          }
+
+          .about-hobbies {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+          }
+
+          .about-facts {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+          }
+
+          .sidebar {
+            flex: 1;
+            padding-left: 2rem;
+          }
+
+          .meta-section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+          }
+
+          .meta-section h2 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+          }
+
+          @media (max-width: 300px) {
+            .about-hobbies {display: flex;}
+          }
+        </style>
+      </head>
+      <body>
+        <!-- Navigation -->
+        <nav class="nav-content">
+          <div class="logo">
+            <img
+              src="images/Renovations%20Logo.png"
+              alt="Lees Renovations Logo"
+              class="logo-image"
+            />
+            <div class="logo-text">
+              <span class="logo-name">Andrew Lees</span>
+              <span class="logo-company">Lees Renovations</span>
+            </div>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="videogame.html">Video Game</a></li>
+            <li><a href="discovery.html">Discovery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+          <h1 class="about-header">About Me</h1>
+
+          <div class="about-container">
+            <div class="about-text">
+              <div class="about-hobbies">
+                <h1>My Hobbies</h1>
+                <p>
+                  When i'm not going to school, I like to go up to my cabin on
+                  Side Lake and jetski. I also like to visit my family here in
+                  Duluth, MN; my sisters are only about 5 minutes away from UMD.
+                </p>
+                <p>One of my favorite things to do is go downhill skiing at Giants Ridge.</p>
+              </div>
+
+              <div class="about-facts">
+                <h1>Interesting Facts</h1>
+                <p>&#x2022 I'm currently studying entrepreneurship and mathematics at the
+                  University of Minnesota Duluth, working towards my dream of
+                  running a successful renovation business.</p>
+                <p>&#x2022 I used to race on my highschool slalom skiing team. We went to giants ridge to practice everyday and competed in meets.</p>
+              </div>
+            </div>
+            <div class="about-ai">
+                <img src="images/Someone doing flooring for a house renovation_.jpeg"
+                class="about-ai">
+                <img src="images/someone skiing at the mountains covered by fresh white snow.jpeg"
+                class="about-ai">
+            </div>
+          </div>
+        </main>
+      </body>
+    </html>
+  </body>
+</html>

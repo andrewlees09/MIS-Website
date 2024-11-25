@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Andrew Lees | Lees Renovations</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: #ffffff;
+        color: #1f5160;
+      }
+
+      /* Navigation Styles */
+      .navbar {
+        background-color: #ffffff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .nav-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .logo-image {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+      }
+
+      .logo-text {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .logo-name {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #1f5160;
+        line-height: 1.2;
+      }
+
+      .logo-company {
+        font-size: 1rem;
+        color: #4f84c2;
+        font-weight: 500;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #1f5160;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        color: #4f84c2;
+      }
+
+      /* Main Content Styles */
+      .main-content {
+        margin-top: 80px;
+        padding: 2rem;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .about-header {
+        background-color: #1f5160;
+        color: #ffffff;
+        padding: 4rem 2rem;
+        border-radius: 15px;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .about-header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .about-header p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      .about-section {
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .about-section h2 {
+        color: #1f5160;
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+      }
+
+      .about-section p {
+        color: #666;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+      }
+
+      .expertise-list {
+        list-style: none;
+        margin-top: 1rem;
+      }
+
+      .expertise-list li {
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+        position: relative;
+      }
+
+      .expertise-list li:before {
+        content: "•";
+        color: #4f84c2;
+        font-size: 1.5rem;
+        position: absolute;
+        left: 0;
+        top: -0.3rem;
+      }
+
+      .profile-image {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 2rem;
+        display: block;
+        object-fit: cover;
+        border: 4px solid #4f84c2;
+      }
+
+      .contact-info {
+        background: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin-top: 2rem;
+      }
+
+      .contact-info p {
+        margin: 0.5rem 0;
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+
+        .about-header {
+          padding: 2rem 1rem;
+        }
+
+        .about-header h1 {
+          font-size: 2rem;
+        }
+
+        .main-content {
+          padding: 1rem;
+        }
+
+        .about-section {
+          padding: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo">
+          <img
+            src="images/Renovations Logo.png"
+            alt="Lees Renovations Logo"
+            class="logo-image"
+          />
+          <div class="logo-text">
+            <span class="logo-name">Andrew Lees</span>
+            <span class="logo-company">Lees Renovations</span>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="videogame.html">Video Game</a></li>
+          <li><a href="discovery.html">Discovery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+<main class="main-content">
+  <div class="about-header">
+    <h1>Contact Me</h1>
+    <p>Let's connect! Feel free to reach out through any of these channels.</p>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-section">
+      <h2>Professional Profiles</h2>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:lees0038@d.umn.edu">lees0038@d.umn.edu</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/andrew-lees-98191632b" target="_blank">Click Here</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/andrewlees09" target="_blank">Click Here</a></p>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <h2>Contact Form</h2>
+      <form action="#" method="POST">
+        <div style="margin-bottom: 1rem;">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; border: 1px solid #ddd; border-radius: 5px;">
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; border: 1px solid #ddd; border-radius: 5px;">
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; border: 1px solid #ddd; border-radius: 5px;">
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; border: 1px solid #ddd; border-radius: 5px; height: 150px;"></textarea>
+        </div>
+        <button type="submit" style="background-color: #1f5160; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 5px; cursor: pointer;">Send Message</button>
+      </form>
+    </div>
+  </div>
+</main>

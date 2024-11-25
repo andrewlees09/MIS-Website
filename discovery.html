@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Andrew Lees | Lees Renovations</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: #ffffff;
+        color: #1f5160;
+      }
+
+      /* Navigation Styles */
+      .navbar {
+        background-color: #ffffff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .nav-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .logo-image {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+      }
+
+      .logo-text {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .logo-name {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #1f5160;
+        line-height: 1.2;
+      }
+
+      .logo-company {
+        font-size: 1rem;
+        color: #4f84c2;
+        font-weight: 500;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #1f5160;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        color: #4f84c2;
+      }
+
+      /* Main Content Styles */
+      .main-content {
+        margin-top: 80px;
+        padding: 2rem;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .about-header {
+        background-color: #1f5160;
+        color: #ffffff;
+        padding: 4rem 2rem;
+        border-radius: 15px;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .about-header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .about-header p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      .about-section {
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .about-section h2 {
+        color: #1f5160;
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+      }
+
+      .about-section p {
+        color: #666;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+      }
+
+      .expertise-list {
+        list-style: none;
+        margin-top: 1rem;
+      }
+
+      .expertise-list li {
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+        position: relative;
+      }
+
+      .expertise-list li:before {
+        content: "•";
+        color: #4f84c2;
+        font-size: 1.5rem;
+        position: absolute;
+        left: 0;
+        top: -0.3rem;
+      }
+
+      .profile-image {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 2rem;
+        display: block;
+        object-fit: cover;
+        border: 4px solid #4f84c2;
+      }
+
+      .contact-info {
+        background: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin-top: 2rem;
+      }
+
+      .contact-info p {
+        margin: 0.5rem 0;
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+
+        .about-header {
+          padding: 2rem 1rem;
+        }
+
+        .about-header h1 {
+          font-size: 2rem;
+        }
+
+        .main-content {
+          padding: 1rem;
+        }
+
+        .about-section {
+          padding: 1.5rem;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo">
+          <img
+            src="images/Renovations Logo.png"
+            alt="Lees Renovations Logo"
+            class="logo-image"
+          />
+          <div class="logo-text">
+            <span class="logo-name">Andrew Lees</span>
+            <span class="logo-company">Lees Renovations</span>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="videogame.html">Video Game</a></li>
+          <li><a href="discovery.html">Discovery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-content">
+      <div class="about-header" style="margin: auto;">
+        <h1>Discovery</h1>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-section">
+          <h2>House Renovation Companies</h2>
+          <ul class="expertise-list">
+            <li><a href="https://www.northerntrends.com/">Northern Trends</a></li>
+            <li><a href="https://litmanconstruction.com/residential-services/?gad_source=1&gclid=Cj0KCQiAuou6BhDhARIsAIfgrn562LuyJ9VkPTwPN_jIO3frLARI-XDuVsTwNCPx3N58tCcQX7CrmqwaAvkpEALw_wcB">Litman Construction</a></li>
+          </ul>
+        </div>
+        
+        <div class="about-section">
+          <h2>Summary</h2>
+          <ul class="expertise-list">
+            <li> Northern Trends - Northern Trends, a locally owned construction company in Duluth, has been building top-quality spaces since 1991. With 96 years of combined experience, they offer custom homes, renovations, and more, working with trusted local professionals. Licensed, insured, and committed to green building, they prioritize quality, fairness, and customer satisfaction.</li>
+            <li>Litman Construction - Founded by Jay Litman in 1975, Jay Litman Construction began with a passion for home improvement that started in his teens. After years of growing the business, Jay passed the reins to his son, Sam, in 2014. Sam, who joined the company in 2005, continues to provide top-quality remodeling and handyman services throughout the Twin Ports area.</li>
+        </div>
+
+         <div class="Good-Fit">
+          <h2>Why I Would be a Good Fit</h2>
+          <ul class="expertise-list">
+            <li>I would be a good fit for these companies because I am a dedicated and strong willed person with an interest in house renovation. I have many hours of experience renovating homes and I believe I would be a good fit for either of these companies.</li>
+
+         </div>
+      </div>
+          </body>
+        </html>
